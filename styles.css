@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+/* || RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || GLOBAL STYLES */
+
+body {
+  background-color: #cceffc;
+  color: #6d3333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 320px;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+div h2 {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* || HEADER */
+
+.header {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.4em;
+  width: 100%;
+}
+#header-img {
+  width: 35vw;
+  height: auto;
+}
+#nav-bar {
+  padding: 0.3em 0;
+}
+
+/* || FORM */
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email {
+  width: 60%;
+  align-self: center;
+  font-size: 1em;
+  margin: 0.5em;
+}
+.submit {
+  width: 35%;
+  align-self: center;
+  font-size: 1em;
+  margin: 0.5em;
+  margin-top: 0;
+  background-color: green;
+  border-radius: 5px;
+}
+
+/* || MAIN */
+
+.icon {
+  display: none;
+}
+
+.desc p {
+  padding: 0 1em;
+  font-size: 1.2em;
+}
+
+/* || VIDEO */
+
+#how-it-works {
+  margin: 1em;
+  align-content: center;
+}
+
+iframe {
+  min-width: 320px;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* || FEATURES */
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  border: 4px solid bisque;
+  margin: 1em;
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+  max-width: 320px;
+}
+.pro-name {
+  font-size: 2em;
+}
+
+ol li {
+  line-height: 2em;
+}
+
+button {
+  margin: 1rem;
+  font-size: 1.2rem;
+  background-color: green;
+  border-radius: 5px;
+}
+
+/* || FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* || LAPTOP */
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 2em;
+  }
+
+  header {
+    max-height: 20vh;
+  }
+
+  .icon {
+    display: inline;
+    font-size: 2rem;
+    color: tomato;
+  }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desc {
+    padding: 1rem;
+    line-height: 2rem;
+  }
+
+  .desc h2 {
+    text-align: start;
+    padding: 0;
+  }
+
+  .desc p {
+    padding: 0;
+  }
+
+  #pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product {
+    max-width: 250px;
+  }
+}
